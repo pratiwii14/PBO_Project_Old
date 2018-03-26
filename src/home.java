@@ -27,27 +27,27 @@ public class home extends javax.swing.JFrame {
     private void initComponents() {
 
         titleHeader = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
+        setting = new javax.swing.JLabel();
+        menu = new javax.swing.JLabel();
+        home = new javax.swing.JLabel();
+        cart = new javax.swing.JLabel();
+        checkout = new javax.swing.JLabel();
+        orderLbl = new javax.swing.JLabel();
+        Name = new javax.swing.JLabel();
+        userIcon = new javax.swing.JLabel();
+        jumlah = new javax.swing.JLabel();
+        dropdown = new javax.swing.JLabel();
+        welcomeLbl = new javax.swing.JLabel();
+        pelangganLbl = new javax.swing.JLabel();
+        id_pelanggan = new javax.swing.JTextField();
         jSeparator1 = new javax.swing.JSeparator();
         jSeparator2 = new javax.swing.JSeparator();
-        jTextField2 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
+        id_order = new javax.swing.JTextField();
+        payoutbtn = new javax.swing.JButton();
         resolusi = new javax.swing.JLabel();
         sidebar = new javax.swing.JPanel();
-        jPanel1 = new javax.swing.JPanel();
-        jPanel2 = new javax.swing.JPanel();
+        header = new javax.swing.JPanel();
+        body = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("KFC - ORDER DELIVERY");
@@ -58,70 +58,70 @@ public class home extends javax.swing.JFrame {
         titleHeader.setText("KFC - ORDER DELIVERY");
         getContentPane().add(titleHeader, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 20, 410, 50));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8_Settings_40px.png"))); // NOI18N
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 330, 60, 50));
+        setting.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8_Settings_40px.png"))); // NOI18N
+        getContentPane().add(setting, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 330, 60, 50));
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8_Menu_40px.png"))); // NOI18N
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 60, 50));
+        menu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8_Menu_40px.png"))); // NOI18N
+        getContentPane().add(menu, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 60, 50));
 
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8_Home_40px.png"))); // NOI18N
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 90, 60, 50));
+        home.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8_Home_40px.png"))); // NOI18N
+        getContentPane().add(home, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 90, 60, 50));
 
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8_Shopping_Cart_40px.png"))); // NOI18N
-        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, 50, 50));
+        cart.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8_Shopping_Cart_40px.png"))); // NOI18N
+        getContentPane().add(cart, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, 50, 50));
 
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8_Money_40px.png"))); // NOI18N
-        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 250, 60, 50));
+        checkout.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8_Money_40px.png"))); // NOI18N
+        getContentPane().add(checkout, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 250, 60, 50));
 
-        jLabel8.setFont(new java.awt.Font("Segoe UI Semibold", 0, 24)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel8.setText("ID ORDER");
-        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 170, 190, 30));
+        orderLbl.setFont(new java.awt.Font("Segoe UI Semibold", 0, 24)); // NOI18N
+        orderLbl.setForeground(new java.awt.Color(255, 255, 255));
+        orderLbl.setText("ID ORDER");
+        getContentPane().add(orderLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 170, 190, 30));
 
-        jLabel9.setFont(new java.awt.Font("Segoe UI Semibold", 0, 20)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel9.setText("Admin");
-        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 50, 80, 40));
+        Name.setFont(new java.awt.Font("Segoe UI Semibold", 0, 20)); // NOI18N
+        Name.setForeground(new java.awt.Color(255, 255, 255));
+        Name.setText("Admin");
+        getContentPane().add(Name, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 50, 80, 40));
 
-        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8_Contacts_40px.png"))); // NOI18N
-        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 40, 40, 50));
+        userIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8_Contacts_40px.png"))); // NOI18N
+        getContentPane().add(userIcon, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 40, 40, 50));
 
-        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8__Circled_2_20px.png"))); // NOI18N
-        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 170, 20, 20));
+        jumlah.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8__Circled_2_20px.png"))); // NOI18N
+        getContentPane().add(jumlah, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 170, 20, 20));
 
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8_Expand_Arrow_25px.png"))); // NOI18N
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(1020, 60, 30, 30));
+        dropdown.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8_Expand_Arrow_25px.png"))); // NOI18N
+        getContentPane().add(dropdown, new org.netbeans.lib.awtextra.AbsoluteConstraints(1020, 60, 30, 30));
 
-        jLabel12.setFont(new java.awt.Font("Segoe UI Light", 0, 16)); // NOI18N
-        jLabel12.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel12.setText("Selamat datang");
-        getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 30, 190, 30));
+        welcomeLbl.setFont(new java.awt.Font("Segoe UI Light", 0, 16)); // NOI18N
+        welcomeLbl.setForeground(new java.awt.Color(255, 255, 255));
+        welcomeLbl.setText("Selamat datang");
+        getContentPane().add(welcomeLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 30, 190, 30));
 
-        jLabel13.setFont(new java.awt.Font("Segoe UI Semibold", 0, 24)); // NOI18N
-        jLabel13.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel13.setText("ID PELANGGAN");
-        getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 110, 190, 30));
+        pelangganLbl.setFont(new java.awt.Font("Segoe UI Semibold", 0, 24)); // NOI18N
+        pelangganLbl.setForeground(new java.awt.Color(255, 255, 255));
+        pelangganLbl.setText("ID PELANGGAN");
+        getContentPane().add(pelangganLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 110, 190, 30));
 
-        jTextField1.setBackground(new java.awt.Color(52, 73, 94));
-        jTextField1.setFont(new java.awt.Font("Segoe UI Light", 0, 24)); // NOI18N
-        jTextField1.setForeground(new java.awt.Color(255, 255, 255));
-        jTextField1.setBorder(null);
-        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 110, 290, 30));
+        id_pelanggan.setBackground(new java.awt.Color(52, 73, 94));
+        id_pelanggan.setFont(new java.awt.Font("Segoe UI Light", 0, 24)); // NOI18N
+        id_pelanggan.setForeground(new java.awt.Color(255, 255, 255));
+        id_pelanggan.setBorder(null);
+        getContentPane().add(id_pelanggan, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 110, 290, 30));
         getContentPane().add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 140, 290, 10));
         getContentPane().add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 200, 290, 10));
 
-        jTextField2.setBackground(new java.awt.Color(52, 73, 94));
-        jTextField2.setFont(new java.awt.Font("Segoe UI Light", 0, 24)); // NOI18N
-        jTextField2.setForeground(new java.awt.Color(255, 255, 255));
-        jTextField2.setBorder(null);
-        getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 170, 290, 30));
+        id_order.setBackground(new java.awt.Color(52, 73, 94));
+        id_order.setFont(new java.awt.Font("Segoe UI Light", 0, 24)); // NOI18N
+        id_order.setForeground(new java.awt.Color(255, 255, 255));
+        id_order.setBorder(null);
+        getContentPane().add(id_order, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 170, 290, 30));
 
-        jButton1.setBackground(new java.awt.Color(92, 151, 191));
-        jButton1.setFont(new java.awt.Font("Segoe UI Semibold", 0, 18)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("PAYOUT");
-        jButton1.setBorder(null);
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 220, 110, 40));
+        payoutbtn.setBackground(new java.awt.Color(92, 151, 191));
+        payoutbtn.setFont(new java.awt.Font("Segoe UI Semibold", 0, 18)); // NOI18N
+        payoutbtn.setForeground(new java.awt.Color(255, 255, 255));
+        payoutbtn.setText("PAYOUT");
+        payoutbtn.setBorder(null);
+        getContentPane().add(payoutbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 220, 110, 40));
 
         resolusi.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         resolusi.setForeground(new java.awt.Color(255, 255, 255));
@@ -142,35 +142,35 @@ public class home extends javax.swing.JFrame {
 
         getContentPane().add(sidebar, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 80, 680));
 
-        jPanel1.setBackground(new java.awt.Color(34, 49, 63));
+        header.setBackground(new java.awt.Color(34, 49, 63));
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout headerLayout = new javax.swing.GroupLayout(header);
+        header.setLayout(headerLayout);
+        headerLayout.setHorizontalGroup(
+            headerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 1050, Short.MAX_VALUE)
         );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        headerLayout.setVerticalGroup(
+            headerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 90, Short.MAX_VALUE)
         );
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 0, 1050, 90));
+        getContentPane().add(header, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 0, 1050, 90));
 
-        jPanel2.setBackground(new java.awt.Color(52, 73, 94));
+        body.setBackground(new java.awt.Color(52, 73, 94));
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout bodyLayout = new javax.swing.GroupLayout(body);
+        body.setLayout(bodyLayout);
+        bodyLayout.setHorizontalGroup(
+            bodyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 1050, Short.MAX_VALUE)
         );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        bodyLayout.setVerticalGroup(
+            bodyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 590, Short.MAX_VALUE)
         );
 
-        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 90, 1050, 590));
+        getContentPane().add(body, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 90, 1050, 590));
 
         pack();
         setLocationRelativeTo(null);
@@ -213,27 +213,27 @@ public class home extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
+    private javax.swing.JLabel Name;
+    private javax.swing.JPanel body;
+    private javax.swing.JLabel cart;
+    private javax.swing.JLabel checkout;
+    private javax.swing.JLabel dropdown;
+    private javax.swing.JPanel header;
+    private javax.swing.JLabel home;
+    private javax.swing.JTextField id_order;
+    private javax.swing.JTextField id_pelanggan;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
+    private javax.swing.JLabel jumlah;
+    private javax.swing.JLabel menu;
+    private javax.swing.JLabel orderLbl;
+    private javax.swing.JButton payoutbtn;
+    private javax.swing.JLabel pelangganLbl;
     private javax.swing.JLabel resolusi;
+    private javax.swing.JLabel setting;
     private javax.swing.JPanel sidebar;
     private javax.swing.JLabel titleHeader;
+    private javax.swing.JLabel userIcon;
+    private javax.swing.JLabel welcomeLbl;
     // End of variables declaration//GEN-END:variables
 }

@@ -30,15 +30,15 @@ public class login extends javax.swing.JFrame {
     private void initComponents() {
 
         titleHeader = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
+        setting = new javax.swing.JLabel();
+        menu = new javax.swing.JLabel();
+        home = new javax.swing.JLabel();
+        cart = new javax.swing.JLabel();
+        checkout = new javax.swing.JLabel();
+        jumlah = new javax.swing.JLabel();
         sidebar = new javax.swing.JPanel();
-        jPanel1 = new javax.swing.JPanel();
-        jPanel2 = new javax.swing.JPanel();
+        header = new javax.swing.JPanel();
+        body = new javax.swing.JPanel();
         jLabel9 = new javax.swing.JLabel();
         passTxt = new javax.swing.JPasswordField();
         jSeparator1 = new javax.swing.JSeparator();
@@ -58,23 +58,23 @@ public class login extends javax.swing.JFrame {
         titleHeader.setText("KFC - ORDER DELIVERY");
         getContentPane().add(titleHeader, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 20, 410, 50));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8_Settings_40px.png"))); // NOI18N
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 330, 60, 50));
+        setting.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8_Settings_40px.png"))); // NOI18N
+        getContentPane().add(setting, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 330, 60, 50));
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8_Menu_40px.png"))); // NOI18N
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 60, 50));
+        menu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8_Menu_40px.png"))); // NOI18N
+        getContentPane().add(menu, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 60, 50));
 
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8_Home_40px.png"))); // NOI18N
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 90, 60, 50));
+        home.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8_Home_40px.png"))); // NOI18N
+        getContentPane().add(home, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 90, 60, 50));
 
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8_Shopping_Cart_40px.png"))); // NOI18N
-        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, 50, 50));
+        cart.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8_Shopping_Cart_40px.png"))); // NOI18N
+        getContentPane().add(cart, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, 50, 50));
 
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8_Money_40px.png"))); // NOI18N
-        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 250, 60, 50));
+        checkout.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8_Money_40px.png"))); // NOI18N
+        getContentPane().add(checkout, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 250, 60, 50));
 
-        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8__Circled_2_20px.png"))); // NOI18N
-        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 170, 20, 20));
+        jumlah.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8__Circled_2_20px.png"))); // NOI18N
+        getContentPane().add(jumlah, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 170, 20, 20));
 
         sidebar.setBackground(new java.awt.Color(44, 62, 80));
 
@@ -91,52 +91,52 @@ public class login extends javax.swing.JFrame {
 
         getContentPane().add(sidebar, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 80, 680));
 
-        jPanel1.setBackground(new java.awt.Color(34, 49, 63));
+        header.setBackground(new java.awt.Color(34, 49, 63));
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout headerLayout = new javax.swing.GroupLayout(header);
+        header.setLayout(headerLayout);
+        headerLayout.setHorizontalGroup(
+            headerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 1050, Short.MAX_VALUE)
         );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        headerLayout.setVerticalGroup(
+            headerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 90, Short.MAX_VALUE)
         );
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 0, 1050, 90));
+        getContentPane().add(header, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 0, 1050, 90));
 
-        jPanel2.setBackground(new java.awt.Color(52, 73, 94));
-        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        body.setBackground(new java.awt.Color(52, 73, 94));
+        body.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel9.setFont(new java.awt.Font("Segoe UI Semilight", 0, 30)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setText("ADMIN LOGIN PAGE");
-        jPanel2.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 20, 290, 60));
+        body.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 20, 290, 60));
 
         passTxt.setBackground(new java.awt.Color(52, 73, 94));
         passTxt.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         passTxt.setForeground(new java.awt.Color(255, 255, 255));
         passTxt.setBorder(null);
-        jPanel2.add(passTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 240, 290, 40));
-        jPanel2.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 200, 290, 10));
+        body.add(passTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 240, 290, 40));
+        body.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 200, 290, 10));
 
         userTxt.setBackground(new java.awt.Color(52, 73, 94));
         userTxt.setFont(new java.awt.Font("Segoe UI Light", 0, 24)); // NOI18N
         userTxt.setForeground(new java.awt.Color(255, 255, 255));
         userTxt.setBorder(null);
-        jPanel2.add(userTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 170, 290, 30));
-        jPanel2.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 280, 290, 10));
+        body.add(userTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 170, 290, 30));
+        body.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 280, 290, 10));
 
         jLabel8.setFont(new java.awt.Font("Segoe UI Light", 0, 24)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setText("Password");
-        jPanel2.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 250, 110, 30));
+        body.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 250, 110, 30));
 
         jLabel13.setFont(new java.awt.Font("Segoe UI Light", 0, 24)); // NOI18N
         jLabel13.setForeground(new java.awt.Color(255, 255, 255));
         jLabel13.setText("Username");
-        jPanel2.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 170, 120, 30));
+        body.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 170, 120, 30));
 
         jButton1.setBackground(new java.awt.Color(92, 151, 191));
         jButton1.setFont(new java.awt.Font("Segoe UI Semibold", 0, 18)); // NOI18N
@@ -148,9 +148,9 @@ public class login extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 300, 110, 50));
+        body.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 300, 110, 50));
 
-        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 90, 1050, 590));
+        getContentPane().add(body, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 90, 1050, 590));
 
         resolusi.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         getContentPane().add(resolusi, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1130, 677));
@@ -219,22 +219,22 @@ public class login extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel body;
+    private javax.swing.JLabel cart;
+    private javax.swing.JLabel checkout;
+    private javax.swing.JPanel header;
+    private javax.swing.JLabel home;
     private javax.swing.JButton jButton1;
-    private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
+    private javax.swing.JLabel jumlah;
+    private javax.swing.JLabel menu;
     private javax.swing.JPasswordField passTxt;
     private javax.swing.JLabel resolusi;
+    private javax.swing.JLabel setting;
     private javax.swing.JPanel sidebar;
     private javax.swing.JLabel titleHeader;
     private javax.swing.JTextField userTxt;
