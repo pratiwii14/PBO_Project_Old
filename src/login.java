@@ -29,15 +29,11 @@ public class login extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        titleHeader = new javax.swing.JLabel();
-        setting = new javax.swing.JLabel();
         menu = new javax.swing.JLabel();
-        home = new javax.swing.JLabel();
-        cart = new javax.swing.JLabel();
-        checkout = new javax.swing.JLabel();
-        jumlah = new javax.swing.JLabel();
         sidebar = new javax.swing.JPanel();
+        setting = new javax.swing.JLabel();
         header = new javax.swing.JPanel();
+        titleHeader = new javax.swing.JLabel();
         body = new javax.swing.JPanel();
         jLabel9 = new javax.swing.JLabel();
         passTxt = new javax.swing.JPasswordField();
@@ -50,58 +46,55 @@ public class login extends javax.swing.JFrame {
         resolusi = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("KFC - ORDER DELIVERY");
+        setTitle("RENTAL M");
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        titleHeader.setFont(new java.awt.Font("Segoe UI Semibold", 0, 36)); // NOI18N
-        titleHeader.setForeground(new java.awt.Color(255, 255, 255));
-        titleHeader.setText("KFC - ORDER DELIVERY");
-        getContentPane().add(titleHeader, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 20, 410, 50));
-
-        setting.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8_Settings_40px.png"))); // NOI18N
-        getContentPane().add(setting, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 330, 60, 50));
 
         menu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8_Menu_40px.png"))); // NOI18N
         getContentPane().add(menu, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 60, 50));
 
-        home.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8_Home_40px.png"))); // NOI18N
-        getContentPane().add(home, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 90, 60, 50));
-
-        cart.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8_Shopping_Cart_40px.png"))); // NOI18N
-        getContentPane().add(cart, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, 50, 50));
-
-        checkout.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8_Money_40px.png"))); // NOI18N
-        getContentPane().add(checkout, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 250, 60, 50));
-
-        jumlah.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8__Circled_2_20px.png"))); // NOI18N
-        getContentPane().add(jumlah, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 170, 20, 20));
-
         sidebar.setBackground(new java.awt.Color(44, 62, 80));
+
+        setting.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8_Settings_40px.png"))); // NOI18N
 
         javax.swing.GroupLayout sidebarLayout = new javax.swing.GroupLayout(sidebar);
         sidebar.setLayout(sidebarLayout);
         sidebarLayout.setHorizontalGroup(
             sidebarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 80, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, sidebarLayout.createSequentialGroup()
+                .addGap(0, 20, Short.MAX_VALUE)
+                .addComponent(setting, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         sidebarLayout.setVerticalGroup(
             sidebarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 680, Short.MAX_VALUE)
+            .addGroup(sidebarLayout.createSequentialGroup()
+                .addGap(92, 92, 92)
+                .addComponent(setting, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(538, Short.MAX_VALUE))
         );
 
         getContentPane().add(sidebar, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 80, 680));
 
         header.setBackground(new java.awt.Color(34, 49, 63));
 
+        titleHeader.setFont(new java.awt.Font("Segoe UI Semibold", 0, 33)); // NOI18N
+        titleHeader.setForeground(new java.awt.Color(255, 255, 255));
+        titleHeader.setText("RENTAL MOBIL - JAYA MAKMUR");
+
         javax.swing.GroupLayout headerLayout = new javax.swing.GroupLayout(header);
         header.setLayout(headerLayout);
         headerLayout.setHorizontalGroup(
             headerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1050, Short.MAX_VALUE)
+            .addGroup(headerLayout.createSequentialGroup()
+                .addGap(29, 29, 29)
+                .addComponent(titleHeader, javax.swing.GroupLayout.PREFERRED_SIZE, 550, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(471, Short.MAX_VALUE))
         );
         headerLayout.setVerticalGroup(
             headerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 90, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, headerLayout.createSequentialGroup()
+                .addContainerGap(27, Short.MAX_VALUE)
+                .addComponent(titleHeader, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
 
         getContentPane().add(header, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 0, 1050, 90));
@@ -220,17 +213,13 @@ public class login extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel body;
-    private javax.swing.JLabel cart;
-    private javax.swing.JLabel checkout;
     private javax.swing.JPanel header;
-    private javax.swing.JLabel home;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
-    private javax.swing.JLabel jumlah;
     private javax.swing.JLabel menu;
     private javax.swing.JPasswordField passTxt;
     private javax.swing.JLabel resolusi;
