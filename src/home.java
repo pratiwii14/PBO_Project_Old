@@ -1,4 +1,5 @@
 
+import java.awt.GridBagLayout;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 
@@ -14,12 +15,27 @@ import java.text.SimpleDateFormat;
  */
 public class home extends javax.swing.JFrame {
 
-    /**
-     * Creates new form login
-     */
+    GridBagLayout layout = new GridBagLayout();
     DateFormat d = DateFormat.getDateInstance();
+    addMobil addCar;
+    addPeminjam addCustomer;
+    dashboard dash;
+    formPeminjaman pesan; 
     public home() {
         initComponents();
+        addCar = new addMobil();
+        addCustomer = new addPeminjam();
+        dash = new dashboard();
+        pesan = new formPeminjaman();
+        body.setLayout(layout);
+        body.add(addCar);
+        body.add(addCustomer);
+        body.add(dash);
+        body.add(pesan);
+        dash.setVisible(true);
+        addCar.setVisible(false);
+        addCustomer.setVisible(false);
+        pesan.setVisible(false);
     }
 
     /**
@@ -31,66 +47,110 @@ public class home extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        titleHeader = new javax.swing.JLabel();
-        setting = new javax.swing.JLabel();
-        menu = new javax.swing.JLabel();
-        home = new javax.swing.JLabel();
+        sidebar = new javax.swing.JPanel();
         cart = new javax.swing.JLabel();
+        home = new javax.swing.JLabel();
+        menu = new javax.swing.JLabel();
         checkout = new javax.swing.JLabel();
-        orderLbl = new javax.swing.JLabel();
+        setting = new javax.swing.JLabel();
+        setting1 = new javax.swing.JLabel();
+        titleHeader = new javax.swing.JLabel();
+        header = new javax.swing.JPanel();
+        userIcon1 = new javax.swing.JLabel();
+        Name1 = new javax.swing.JLabel();
+        welcomeLbl1 = new javax.swing.JLabel();
         Name = new javax.swing.JLabel();
         userIcon = new javax.swing.JLabel();
-        jumlah = new javax.swing.JLabel();
         dropdown = new javax.swing.JLabel();
         welcomeLbl = new javax.swing.JLabel();
-        pelangganLbl = new javax.swing.JLabel();
-        orderLbl1 = new javax.swing.JLabel();
-        orderLbl2 = new javax.swing.JLabel();
-        merk = new javax.swing.JComboBox<>();
-        orderLbl3 = new javax.swing.JLabel();
-        orderLbl4 = new javax.swing.JLabel();
-        setting1 = new javax.swing.JLabel();
         harga = new javax.swing.JLabel();
-        jSeparator2 = new javax.swing.JSeparator();
-        jml = new javax.swing.JTextField();
-        id_pelanggan2 = new javax.swing.JTextField();
-        jSeparator1 = new javax.swing.JSeparator();
-        tglKembali = new com.toedter.calendar.JDateChooser();
-        tglOrder = new com.toedter.calendar.JDateChooser();
-        payoutbtn = new javax.swing.JButton();
-        resolusi = new javax.swing.JLabel();
-        sidebar = new javax.swing.JPanel();
-        header = new javax.swing.JPanel();
         body = new javax.swing.JPanel();
+        resolusi = new javax.swing.JLabel();
+        itemLapData = new javax.swing.JMenuBar();
+        entryData = new javax.swing.JMenu();
+        itemMobil = new javax.swing.JMenuItem();
+        itemPeminjam = new javax.swing.JMenuItem();
+        Transaksi = new javax.swing.JMenu();
+        itemPeminjaman = new javax.swing.JMenuItem();
+        itemPengembalian = new javax.swing.JMenuItem();
+        itemLaporan = new javax.swing.JMenu();
+        jMenu1 = new javax.swing.JMenu();
+        lapPeminjaman = new javax.swing.JMenuItem();
+        lapPendapatan = new javax.swing.JMenuItem();
+        itemBantuan = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("RENTAL MOBIL - JAYA MAKMUR");
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        sidebar.setBackground(new java.awt.Color(44, 62, 80));
+        sidebar.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        cart.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8_Plus_Math_40px.png"))); // NOI18N
+        sidebar.add(cart, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, 50, 50));
+
+        home.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8_Home_40px.png"))); // NOI18N
+        sidebar.add(home, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 90, 60, 50));
+
+        menu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8_Menu_40px.png"))); // NOI18N
+        sidebar.add(menu, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 60, 50));
+
+        checkout.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8_Money_40px.png"))); // NOI18N
+        sidebar.add(checkout, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 250, 60, 50));
+
+        setting.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8_Settings_40px.png"))); // NOI18N
+        sidebar.add(setting, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 410, 60, 50));
+
+        setting1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8_Car_40px.png"))); // NOI18N
+        sidebar.add(setting1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 330, 60, 50));
+
+        getContentPane().add(sidebar, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 80, 650));
 
         titleHeader.setFont(new java.awt.Font("Segoe UI Semibold", 0, 33)); // NOI18N
         titleHeader.setForeground(new java.awt.Color(255, 255, 255));
         titleHeader.setText("RENTAL MOBIL - JAYA MAKMUR");
         getContentPane().add(titleHeader, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 20, 550, 50));
 
-        setting.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8_Settings_40px.png"))); // NOI18N
-        getContentPane().add(setting, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 410, 60, 50));
+        header.setBackground(new java.awt.Color(34, 49, 63));
 
-        menu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8_Menu_40px.png"))); // NOI18N
-        getContentPane().add(menu, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 60, 50));
+        userIcon1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8_Contacts_40px.png"))); // NOI18N
 
-        home.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8_Home_40px.png"))); // NOI18N
-        getContentPane().add(home, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 90, 60, 50));
+        Name1.setFont(new java.awt.Font("Segoe UI Semibold", 0, 20)); // NOI18N
+        Name1.setForeground(new java.awt.Color(255, 255, 255));
+        Name1.setText("Admin");
 
-        cart.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8_Shopping_Cart_40px.png"))); // NOI18N
-        getContentPane().add(cart, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, 50, 50));
+        welcomeLbl1.setFont(new java.awt.Font("Segoe UI Light", 0, 16)); // NOI18N
+        welcomeLbl1.setForeground(new java.awt.Color(255, 255, 255));
+        welcomeLbl1.setText("Selamat datang");
 
-        checkout.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8_Money_40px.png"))); // NOI18N
-        getContentPane().add(checkout, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 250, 60, 50));
+        javax.swing.GroupLayout headerLayout = new javax.swing.GroupLayout(header);
+        header.setLayout(headerLayout);
+        headerLayout.setHorizontalGroup(
+            headerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, headerLayout.createSequentialGroup()
+                .addContainerGap(948, Short.MAX_VALUE)
+                .addComponent(userIcon1)
+                .addGap(10, 10, 10)
+                .addGroup(headerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(welcomeLbl1, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Name1, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap())
+        );
+        headerLayout.setVerticalGroup(
+            headerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, headerLayout.createSequentialGroup()
+                .addGap(0, 30, Short.MAX_VALUE)
+                .addGroup(headerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(headerLayout.createSequentialGroup()
+                        .addGap(10, 10, 10)
+                        .addComponent(userIcon1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(welcomeLbl1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(headerLayout.createSequentialGroup()
+                        .addGap(20, 20, 20)
+                        .addComponent(Name1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))))
+        );
 
-        orderLbl.setFont(new java.awt.Font("Segoe UI Semibold", 0, 20)); // NOI18N
-        orderLbl.setForeground(new java.awt.Color(255, 255, 255));
-        orderLbl.setText("HARGA");
-        getContentPane().add(orderLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 470, 190, 30));
+        getContentPane().add(header, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1130, 90));
 
         Name.setFont(new java.awt.Font("Segoe UI Semibold", 0, 20)); // NOI18N
         Name.setForeground(new java.awt.Color(255, 255, 255));
@@ -100,149 +160,110 @@ public class home extends javax.swing.JFrame {
         userIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8_Contacts_40px.png"))); // NOI18N
         getContentPane().add(userIcon, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 40, 40, 50));
 
-        jumlah.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8__Circled_2_20px.png"))); // NOI18N
-        getContentPane().add(jumlah, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 170, 20, 20));
-
         dropdown.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8_Logout_Rounded_Left_40px.png"))); // NOI18N
-        getContentPane().add(dropdown, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 610, 40, 50));
+        getContentPane().add(dropdown, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 540, 50, 100));
 
         welcomeLbl.setFont(new java.awt.Font("Segoe UI Light", 0, 16)); // NOI18N
         welcomeLbl.setForeground(new java.awt.Color(255, 255, 255));
         welcomeLbl.setText("Selamat datang");
         getContentPane().add(welcomeLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 30, 120, 30));
 
-        pelangganLbl.setFont(new java.awt.Font("Segoe UI Semibold", 0, 20)); // NOI18N
-        pelangganLbl.setForeground(new java.awt.Color(255, 255, 255));
-        pelangganLbl.setText("NAMA");
-        getContentPane().add(pelangganLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 110, 190, 30));
-
-        orderLbl1.setFont(new java.awt.Font("Segoe UI Semibold", 0, 20)); // NOI18N
-        orderLbl1.setForeground(new java.awt.Color(255, 255, 255));
-        orderLbl1.setText("TANGGAL ORDER");
-        getContentPane().add(orderLbl1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 180, 210, 30));
-
-        orderLbl2.setFont(new java.awt.Font("Segoe UI Semibold", 0, 20)); // NOI18N
-        orderLbl2.setForeground(new java.awt.Color(255, 255, 255));
-        orderLbl2.setText("TANGGAL KEMBALI");
-        getContentPane().add(orderLbl2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 250, 210, 30));
-
-        merk.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Honda Jazz", "Kijang Inova", "Suzuki APV", "Toyota Veloz", "Toyota Calya" }));
-        merk.setSelectedItem(getIconImage());
-        merk.setBorder(null);
-        merk.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                merkActionPerformed(evt);
-            }
-        });
-        getContentPane().add(merk, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 390, 290, 40));
-
-        orderLbl3.setFont(new java.awt.Font("Segoe UI Semibold", 0, 20)); // NOI18N
-        orderLbl3.setForeground(new java.awt.Color(255, 255, 255));
-        orderLbl3.setText("MERK MOBIL");
-        getContentPane().add(orderLbl3, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 390, 190, 30));
-
-        orderLbl4.setFont(new java.awt.Font("Segoe UI Semibold", 0, 20)); // NOI18N
-        orderLbl4.setForeground(new java.awt.Color(255, 255, 255));
-        orderLbl4.setText("JUMLAH MOBIL");
-        getContentPane().add(orderLbl4, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 320, 190, 30));
-
-        setting1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8_Car_40px.png"))); // NOI18N
-        getContentPane().add(setting1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 330, 60, 50));
-
         harga.setFont(new java.awt.Font("Segoe UI Semibold", 0, 20)); // NOI18N
         harga.setForeground(new java.awt.Color(255, 255, 255));
         getContentPane().add(harga, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 460, 270, 40));
-        getContentPane().add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 350, 290, 10));
 
-        jml.setBackground(new java.awt.Color(52, 73, 94));
-        jml.setFont(new java.awt.Font("Segoe UI Light", 0, 24)); // NOI18N
-        jml.setForeground(new java.awt.Color(255, 255, 255));
-        jml.setBorder(null);
-        getContentPane().add(jml, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 320, 290, 30));
-
-        id_pelanggan2.setBackground(new java.awt.Color(52, 73, 94));
-        id_pelanggan2.setFont(new java.awt.Font("Segoe UI Light", 0, 24)); // NOI18N
-        id_pelanggan2.setForeground(new java.awt.Color(255, 255, 255));
-        id_pelanggan2.setBorder(null);
-        getContentPane().add(id_pelanggan2, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 110, 290, 30));
-        getContentPane().add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 140, 290, 10));
-        getContentPane().add(tglKembali, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 240, 290, 40));
-        getContentPane().add(tglOrder, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 170, 290, 40));
-
-        payoutbtn.setBackground(new java.awt.Color(92, 151, 191));
-        payoutbtn.setFont(new java.awt.Font("Segoe UI Semibold", 0, 18)); // NOI18N
-        payoutbtn.setForeground(new java.awt.Color(255, 255, 255));
-        payoutbtn.setText("PAYOUT");
-        payoutbtn.setBorder(null);
-        getContentPane().add(payoutbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 530, 110, 40));
+        body.setBackground(new java.awt.Color(52, 73, 94));
+        body.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         resolusi.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         resolusi.setForeground(new java.awt.Color(255, 255, 255));
-        getContentPane().add(resolusi, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1130, 677));
+        body.add(resolusi, new org.netbeans.lib.awtextra.AbsoluteConstraints(-80, -113, 1130, 670));
 
-        sidebar.setBackground(new java.awt.Color(44, 62, 80));
+        getContentPane().add(body, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 90, 1050, -1));
 
-        javax.swing.GroupLayout sidebarLayout = new javax.swing.GroupLayout(sidebar);
-        sidebar.setLayout(sidebarLayout);
-        sidebarLayout.setHorizontalGroup(
-            sidebarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 80, Short.MAX_VALUE)
-        );
-        sidebarLayout.setVerticalGroup(
-            sidebarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 680, Short.MAX_VALUE)
-        );
+        itemLapData.setBorder(null);
 
-        getContentPane().add(sidebar, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 80, 680));
+        entryData.setText("Entry Data");
 
-        header.setBackground(new java.awt.Color(34, 49, 63));
+        itemMobil.setText("Entry Data Mobil");
+        itemMobil.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                itemMobilActionPerformed(evt);
+            }
+        });
+        entryData.add(itemMobil);
 
-        javax.swing.GroupLayout headerLayout = new javax.swing.GroupLayout(header);
-        header.setLayout(headerLayout);
-        headerLayout.setHorizontalGroup(
-            headerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1050, Short.MAX_VALUE)
-        );
-        headerLayout.setVerticalGroup(
-            headerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 90, Short.MAX_VALUE)
-        );
+        itemPeminjam.setText("Entry Data Peminjam");
+        itemPeminjam.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                itemPeminjamActionPerformed(evt);
+            }
+        });
+        entryData.add(itemPeminjam);
 
-        getContentPane().add(header, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 0, 1050, 90));
+        itemLapData.add(entryData);
 
-        body.setBackground(new java.awt.Color(52, 73, 94));
+        Transaksi.setText("Transaksi");
 
-        javax.swing.GroupLayout bodyLayout = new javax.swing.GroupLayout(body);
-        body.setLayout(bodyLayout);
-        bodyLayout.setHorizontalGroup(
-            bodyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1050, Short.MAX_VALUE)
-        );
-        bodyLayout.setVerticalGroup(
-            bodyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 590, Short.MAX_VALUE)
-        );
+        itemPeminjaman.setText("Transaksi Peminjaman");
+        itemPeminjaman.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                itemPeminjamanActionPerformed(evt);
+            }
+        });
+        Transaksi.add(itemPeminjaman);
 
-        getContentPane().add(body, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 90, 1050, 590));
+        itemPengembalian.setText("Transaksi Pengembalian");
+        Transaksi.add(itemPengembalian);
+
+        itemLapData.add(Transaksi);
+
+        itemLaporan.setText("Laporan");
+
+        jMenu1.setText("Laporan Data");
+
+        lapPeminjaman.setText("Peminjaman");
+        jMenu1.add(lapPeminjaman);
+
+        lapPendapatan.setText("Pendapatan");
+        jMenu1.add(lapPendapatan);
+
+        itemLaporan.add(jMenu1);
+
+        itemLapData.add(itemLaporan);
+
+        itemBantuan.setText("Bantuan");
+        itemLapData.add(itemBantuan);
+
+        setJMenuBar(itemLapData);
 
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void merkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_merkActionPerformed
-        d = new SimpleDateFormat("dd");
-        String mobil = (String) merk.getSelectedItem();
-        String x = d.format(tglOrder.getDate());
-        String y = d.format(tglKembali.getDate());
-        int xx = Integer.parseInt(x);
-        int yy = Integer.parseInt(y);
-        int total;
-        int jumlah = Integer.parseInt(jml.getText());
-        if (mobil.equalsIgnoreCase("Honda Jazz")) {
-            total = 10000 * jumlah;
-            harga.setText(""+total);
-        }
-    }//GEN-LAST:event_merkActionPerformed
+    private void itemMobilActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itemMobilActionPerformed
+        // TODO add your handling code here:
+        addCar.setVisible(true);
+        addCustomer.setVisible(false);
+        dash.setVisible(false);
+        pesan.setVisible(false);
+    }//GEN-LAST:event_itemMobilActionPerformed
+
+    private void itemPeminjamActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itemPeminjamActionPerformed
+        // TODO add your handling code here:
+        addCar.setVisible(false);
+        addCustomer.setVisible(true);
+        dash.setVisible(false);
+        pesan.setVisible(false);
+    }//GEN-LAST:event_itemPeminjamActionPerformed
+
+    private void itemPeminjamanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itemPeminjamanActionPerformed
+        // TODO add your handling code here:
+        addCar.setVisible(false);
+        addCustomer.setVisible(false);
+        dash.setVisible(false);
+        pesan.setVisible(true);
+    }//GEN-LAST:event_itemPeminjamanActionPerformed
 
     /**
      * @param args the command line arguments
@@ -282,35 +303,35 @@ public class home extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Name;
+    private javax.swing.JLabel Name1;
+    private javax.swing.JMenu Transaksi;
     private javax.swing.JPanel body;
     private javax.swing.JLabel cart;
     private javax.swing.JLabel checkout;
     private javax.swing.JLabel dropdown;
+    private javax.swing.JMenu entryData;
     private javax.swing.JLabel harga;
     private javax.swing.JPanel header;
     private javax.swing.JLabel home;
-    private javax.swing.JTextField id_pelanggan2;
-    private javax.swing.JSeparator jSeparator1;
-    private javax.swing.JSeparator jSeparator2;
-    private javax.swing.JTextField jml;
-    private javax.swing.JLabel jumlah;
+    private javax.swing.JMenu itemBantuan;
+    private javax.swing.JMenuBar itemLapData;
+    private javax.swing.JMenu itemLaporan;
+    private javax.swing.JMenuItem itemMobil;
+    private javax.swing.JMenuItem itemPeminjam;
+    private javax.swing.JMenuItem itemPeminjaman;
+    private javax.swing.JMenuItem itemPengembalian;
+    private javax.swing.JMenu jMenu1;
+    private javax.swing.JMenuItem lapPeminjaman;
+    private javax.swing.JMenuItem lapPendapatan;
     private javax.swing.JLabel menu;
-    private javax.swing.JComboBox<String> merk;
-    private javax.swing.JLabel orderLbl;
-    private javax.swing.JLabel orderLbl1;
-    private javax.swing.JLabel orderLbl2;
-    private javax.swing.JLabel orderLbl3;
-    private javax.swing.JLabel orderLbl4;
-    private javax.swing.JButton payoutbtn;
-    private javax.swing.JLabel pelangganLbl;
     private javax.swing.JLabel resolusi;
     private javax.swing.JLabel setting;
     private javax.swing.JLabel setting1;
     private javax.swing.JPanel sidebar;
-    private com.toedter.calendar.JDateChooser tglKembali;
-    private com.toedter.calendar.JDateChooser tglOrder;
     private javax.swing.JLabel titleHeader;
     private javax.swing.JLabel userIcon;
+    private javax.swing.JLabel userIcon1;
     private javax.swing.JLabel welcomeLbl;
+    private javax.swing.JLabel welcomeLbl1;
     // End of variables declaration//GEN-END:variables
 }

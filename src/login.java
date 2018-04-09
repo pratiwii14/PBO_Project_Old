@@ -43,6 +43,7 @@ public class login extends javax.swing.JFrame {
         jLabel8 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
         resolusi = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -105,31 +106,31 @@ public class login extends javax.swing.JFrame {
         jLabel9.setFont(new java.awt.Font("Segoe UI Semilight", 0, 30)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setText("ADMIN LOGIN PAGE");
-        body.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 20, 290, 60));
+        body.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 0, 290, 60));
 
         passTxt.setBackground(new java.awt.Color(52, 73, 94));
         passTxt.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         passTxt.setForeground(new java.awt.Color(255, 255, 255));
         passTxt.setBorder(null);
-        body.add(passTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 240, 290, 40));
-        body.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 200, 290, 10));
+        body.add(passTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 220, 290, 40));
+        body.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 170, 290, 10));
 
         userTxt.setBackground(new java.awt.Color(52, 73, 94));
         userTxt.setFont(new java.awt.Font("Segoe UI Light", 0, 24)); // NOI18N
         userTxt.setForeground(new java.awt.Color(255, 255, 255));
         userTxt.setBorder(null);
-        body.add(userTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 170, 290, 30));
-        body.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 280, 290, 10));
+        body.add(userTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 140, 290, 30));
+        body.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 260, 290, 10));
 
         jLabel8.setFont(new java.awt.Font("Segoe UI Light", 0, 24)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setText("Password");
-        body.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 250, 110, 30));
+        body.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 230, 110, 30));
 
         jLabel13.setFont(new java.awt.Font("Segoe UI Light", 0, 24)); // NOI18N
         jLabel13.setForeground(new java.awt.Color(255, 255, 255));
         jLabel13.setText("Username");
-        body.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 170, 120, 30));
+        body.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 140, 120, 30));
 
         jButton1.setBackground(new java.awt.Color(92, 151, 191));
         jButton1.setFont(new java.awt.Font("Segoe UI Semibold", 0, 18)); // NOI18N
@@ -141,7 +142,10 @@ public class login extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        body.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 300, 110, 50));
+        body.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 280, 110, 50));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/mobil.png"))); // NOI18N
+        body.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 90, 270, 260));
 
         getContentPane().add(body, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 90, 1050, 590));
 
@@ -215,6 +219,7 @@ public class login extends javax.swing.JFrame {
     private javax.swing.JPanel body;
     private javax.swing.JPanel header;
     private javax.swing.JButton jButton1;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
