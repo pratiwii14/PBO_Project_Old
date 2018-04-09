@@ -26,30 +26,111 @@ public class formPengembalian extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        pelunasan = new javax.swing.ButtonGroup();
         pelangganLbl1 = new javax.swing.JLabel();
         id_pelanggan2 = new javax.swing.JTextField();
         jSeparator1 = new javax.swing.JSeparator();
+        jSeparator2 = new javax.swing.JSeparator();
+        id_pelanggan3 = new javax.swing.JTextField();
+        pelangganLbl2 = new javax.swing.JLabel();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        tblPinjam = new javax.swing.JTable();
+        totalLbl = new javax.swing.JTextField();
+        pelangganLbl3 = new javax.swing.JLabel();
+        sdhLunas = new javax.swing.JRadioButton();
+        blmLunas = new javax.swing.JRadioButton();
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
 
         setBackground(new java.awt.Color(52, 73, 94));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         pelangganLbl1.setFont(new java.awt.Font("Segoe UI Semibold", 0, 18)); // NOI18N
         pelangganLbl1.setForeground(new java.awt.Color(255, 255, 255));
-        pelangganLbl1.setText("ID ORDER");
-        add(pelangganLbl1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 70, 90, 30));
+        pelangganLbl1.setText("ID  Peminjaman");
+        add(pelangganLbl1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 50, 140, 30));
 
         id_pelanggan2.setBackground(new java.awt.Color(52, 73, 94));
         id_pelanggan2.setFont(new java.awt.Font("Segoe UI Light", 0, 24)); // NOI18N
         id_pelanggan2.setForeground(new java.awt.Color(255, 255, 255));
         id_pelanggan2.setBorder(null);
-        add(id_pelanggan2, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 70, 290, 30));
-        add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 100, 290, 10));
+        add(id_pelanggan2, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 50, 290, 30));
+        add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 80, 290, 10));
+        add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 150, 290, 10));
+
+        id_pelanggan3.setBackground(new java.awt.Color(52, 73, 94));
+        id_pelanggan3.setFont(new java.awt.Font("Segoe UI Light", 0, 24)); // NOI18N
+        id_pelanggan3.setForeground(new java.awt.Color(255, 255, 255));
+        id_pelanggan3.setBorder(null);
+        add(id_pelanggan3, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 120, 290, 30));
+
+        pelangganLbl2.setFont(new java.awt.Font("Segoe UI Semibold", 0, 18)); // NOI18N
+        pelangganLbl2.setForeground(new java.awt.Color(255, 255, 255));
+        pelangganLbl2.setText("TOTAL");
+        add(pelangganLbl2, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 350, 80, 40));
+
+        tblPinjam.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null}
+            },
+            new String [] {
+                "id_order", "Nama", "Merk Mobil", "Jumlah", "Harga", "tglPinjam", "tglKembali"
+            }
+        ));
+        tblPinjam.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                tblPinjamMouseClicked(evt);
+            }
+        });
+        jScrollPane2.setViewportView(tblPinjam);
+
+        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 180, 520, 150));
+        add(totalLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 350, 160, 40));
+
+        pelangganLbl3.setFont(new java.awt.Font("Segoe UI Semibold", 0, 18)); // NOI18N
+        pelangganLbl3.setForeground(new java.awt.Color(255, 255, 255));
+        pelangganLbl3.setText("ID User");
+        add(pelangganLbl3, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 120, 140, 30));
+
+        pelunasan.add(sdhLunas);
+        sdhLunas.setText("Lunas");
+        add(sdhLunas, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 430, 120, -1));
+
+        pelunasan.add(blmLunas);
+        blmLunas.setText("Belum Lunas");
+        add(blmLunas, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 460, 120, -1));
+
+        jButton1.setText("Batal");
+        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 510, 90, 40));
+
+        jButton2.setText("Simpan");
+        add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 510, 90, 40));
     }// </editor-fold>//GEN-END:initComponents
+
+    private void tblPinjamMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tblPinjamMouseClicked
+        // TODO add your handling code here:
+
+    }//GEN-LAST:event_tblPinjamMouseClicked
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JRadioButton blmLunas;
     private javax.swing.JTextField id_pelanggan2;
+    private javax.swing.JTextField id_pelanggan3;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JSeparator jSeparator1;
+    private javax.swing.JSeparator jSeparator2;
     private javax.swing.JLabel pelangganLbl1;
+    private javax.swing.JLabel pelangganLbl2;
+    private javax.swing.JLabel pelangganLbl3;
+    private javax.swing.ButtonGroup pelunasan;
+    private javax.swing.JRadioButton sdhLunas;
+    private javax.swing.JTable tblPinjam;
+    private javax.swing.JTextField totalLbl;
     // End of variables declaration//GEN-END:variables
 }

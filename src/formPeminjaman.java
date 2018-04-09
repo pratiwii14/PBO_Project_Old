@@ -88,7 +88,7 @@ public class formPeminjaman extends javax.swing.JPanel {
         payoutbtn1.setForeground(new java.awt.Color(255, 255, 255));
         payoutbtn1.setText("CETAK STRUK");
         payoutbtn1.setBorder(null);
-        add(payoutbtn1, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 230, 140, 40));
+        add(payoutbtn1, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 230, 140, 40));
         add(tglOrder, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 120, 290, 40));
         add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 100, 290, 10));
 
@@ -121,13 +121,13 @@ public class formPeminjaman extends javax.swing.JPanel {
 
         tblPinjam.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null}
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null}
             },
             new String [] {
-                "id_order", "Nama", "Merk Mobil", "Jumlah", "Harga"
+                "id_order", "Nama", "Merk Mobil", "Jumlah", "Harga", "tglPinjam", "tglKembali"
             }
         ));
         tblPinjam.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -137,7 +137,7 @@ public class formPeminjaman extends javax.swing.JPanel {
         });
         jScrollPane2.setViewportView(tblPinjam);
 
-        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 70, 490, 150));
+        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 70, 520, 150));
 
         pelangganLbl1.setFont(new java.awt.Font("Segoe UI Semibold", 0, 18)); // NOI18N
         pelangganLbl1.setForeground(new java.awt.Color(255, 255, 255));
