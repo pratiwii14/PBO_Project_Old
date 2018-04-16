@@ -41,6 +41,8 @@ public class formPengembalian extends javax.swing.JPanel {
         blmLunas = new javax.swing.JRadioButton();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
+        pelangganLbl4 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(52, 73, 94));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -97,17 +99,23 @@ public class formPengembalian extends javax.swing.JPanel {
 
         pelunasan.add(sdhLunas);
         sdhLunas.setText("Lunas");
-        add(sdhLunas, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 430, 120, -1));
+        add(sdhLunas, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 410, 120, -1));
 
         pelunasan.add(blmLunas);
         blmLunas.setText("Belum Lunas");
-        add(blmLunas, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 460, 120, -1));
+        add(blmLunas, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 440, 120, -1));
 
         jButton1.setText("Batal");
-        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 510, 90, 40));
+        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 490, 90, 40));
 
         jButton2.setText("Simpan");
-        add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 510, 90, 40));
+        add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 490, 90, 40));
+
+        pelangganLbl4.setFont(new java.awt.Font("Segoe UI Semibold", 0, 18)); // NOI18N
+        pelangganLbl4.setForeground(new java.awt.Color(255, 255, 255));
+        pelangganLbl4.setText("PENGEMBALIAN");
+        add(pelangganLbl4, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 0, 140, 40));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1130, 680));
     }// </editor-fold>//GEN-END:initComponents
 
     private void tblPinjamMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tblPinjamMouseClicked
@@ -122,12 +130,14 @@ public class formPengembalian extends javax.swing.JPanel {
     private javax.swing.JTextField id_pelanggan3;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JLabel pelangganLbl1;
     private javax.swing.JLabel pelangganLbl2;
     private javax.swing.JLabel pelangganLbl3;
+    private javax.swing.JLabel pelangganLbl4;
     private javax.swing.ButtonGroup pelunasan;
     private javax.swing.JRadioButton sdhLunas;
     private javax.swing.JTable tblPinjam;

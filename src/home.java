@@ -1,4 +1,6 @@
 
+import data.pendapatan;
+import data.listPeminjaman;
 import java.awt.GridBagLayout;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -21,21 +23,33 @@ public class home extends javax.swing.JFrame {
     addPeminjam addCustomer;
     dashboard dash;
     formPeminjaman pesan; 
+    formPengembalian kembali;
+    listPeminjaman pinjam;
+    pendapatan pendapatan;
     public home() {
         initComponents();
         addCar = new addMobil();
         addCustomer = new addPeminjam();
         dash = new dashboard();
         pesan = new formPeminjaman();
+        kembali = new formPengembalian();
+        pinjam = new listPeminjaman();
+        pendapatan = new pendapatan ();
         body.setLayout(layout);
         body.add(addCar);
         body.add(addCustomer);
         body.add(dash);
         body.add(pesan);
+        body.add(kembali);
+        body.add(pinjam);
+        body.add (pendapatan);
         dash.setVisible(true);
         addCar.setVisible(false);
         addCustomer.setVisible(false);
         pesan.setVisible(false);
+        kembali.setVisible(false);
+        pinjam.setVisible(false);
+        pendapatan.setVisible(false);
     }
 
     /**
@@ -63,7 +77,6 @@ public class home extends javax.swing.JFrame {
         userIcon = new javax.swing.JLabel();
         dropdown = new javax.swing.JLabel();
         welcomeLbl = new javax.swing.JLabel();
-        harga = new javax.swing.JLabel();
         body = new javax.swing.JPanel();
         resolusi = new javax.swing.JLabel();
         itemLapData = new javax.swing.JMenuBar();
@@ -168,10 +181,6 @@ public class home extends javax.swing.JFrame {
         welcomeLbl.setText("Selamat datang");
         getContentPane().add(welcomeLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 30, 120, 30));
 
-        harga.setFont(new java.awt.Font("Segoe UI Semibold", 0, 20)); // NOI18N
-        harga.setForeground(new java.awt.Color(255, 255, 255));
-        getContentPane().add(harga, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 460, 270, 40));
-
         body.setBackground(new java.awt.Color(52, 73, 94));
         body.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -214,6 +223,11 @@ public class home extends javax.swing.JFrame {
         Transaksi.add(itemPeminjaman);
 
         itemPengembalian.setText("Transaksi Pengembalian");
+        itemPengembalian.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                itemPengembalianActionPerformed(evt);
+            }
+        });
         Transaksi.add(itemPengembalian);
 
         itemLapData.add(Transaksi);
@@ -223,9 +237,19 @@ public class home extends javax.swing.JFrame {
         jMenu1.setText("Laporan Data");
 
         lapPeminjaman.setText("Peminjaman");
+        lapPeminjaman.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                lapPeminjamanActionPerformed(evt);
+            }
+        });
         jMenu1.add(lapPeminjaman);
 
         lapPendapatan.setText("Pendapatan");
+        lapPendapatan.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                lapPendapatanActionPerformed(evt);
+            }
+        });
         jMenu1.add(lapPendapatan);
 
         itemLaporan.add(jMenu1);
@@ -247,6 +271,9 @@ public class home extends javax.swing.JFrame {
         addCustomer.setVisible(false);
         dash.setVisible(false);
         pesan.setVisible(false);
+        kembali.setVisible(false);
+        pinjam.setVisible(false);
+        pendapatan.setVisible(false);
     }//GEN-LAST:event_itemMobilActionPerformed
 
     private void itemPeminjamActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itemPeminjamActionPerformed
@@ -255,6 +282,9 @@ public class home extends javax.swing.JFrame {
         addCustomer.setVisible(true);
         dash.setVisible(false);
         pesan.setVisible(false);
+        kembali.setVisible(false);
+        pinjam.setVisible(false);
+        pendapatan.setVisible(false);
     }//GEN-LAST:event_itemPeminjamActionPerformed
 
     private void itemPeminjamanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itemPeminjamanActionPerformed
@@ -263,7 +293,41 @@ public class home extends javax.swing.JFrame {
         addCustomer.setVisible(false);
         dash.setVisible(false);
         pesan.setVisible(true);
+        kembali.setVisible(false);
+        pinjam.setVisible(false);
+        pendapatan.setVisible(false);
     }//GEN-LAST:event_itemPeminjamanActionPerformed
+
+    private void itemPengembalianActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itemPengembalianActionPerformed
+        // TODO add your handling code here:
+        addCar.setVisible(false);
+        addCustomer.setVisible(false);
+        dash.setVisible(false);
+        pesan.setVisible(false);
+        kembali.setVisible(true);
+        pinjam.setVisible(false);
+        pendapatan.setVisible(false);
+    }//GEN-LAST:event_itemPengembalianActionPerformed
+
+    private void lapPeminjamanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lapPeminjamanActionPerformed
+        addCar.setVisible(false);
+        addCustomer.setVisible(false);
+        dash.setVisible(false);
+        pesan.setVisible(false);
+        kembali.setVisible(false);
+        pinjam.setVisible(true);
+        pendapatan.setVisible(false);
+    }//GEN-LAST:event_lapPeminjamanActionPerformed
+
+    private void lapPendapatanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lapPendapatanActionPerformed
+        addCar.setVisible(false);
+        addCustomer.setVisible(false);
+        dash.setVisible(false);
+        pesan.setVisible(false);
+        kembali.setVisible(false);
+        pinjam.setVisible(false);
+        pendapatan.setVisible(true);
+    }//GEN-LAST:event_lapPendapatanActionPerformed
 
     /**
      * @param args the command line arguments
@@ -310,7 +374,6 @@ public class home extends javax.swing.JFrame {
     private javax.swing.JLabel checkout;
     private javax.swing.JLabel dropdown;
     private javax.swing.JMenu entryData;
-    private javax.swing.JLabel harga;
     private javax.swing.JPanel header;
     private javax.swing.JLabel home;
     private javax.swing.JMenu itemBantuan;

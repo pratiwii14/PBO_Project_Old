@@ -47,7 +47,7 @@ public class login extends javax.swing.JFrame {
         resolusi = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("RENTAL M");
+        setTitle("RENTAL MOBIL - JAYA MAKMUR");
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         menu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8_Menu_40px.png"))); // NOI18N
@@ -111,6 +111,7 @@ public class login extends javax.swing.JFrame {
         passTxt.setBackground(new java.awt.Color(52, 73, 94));
         passTxt.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         passTxt.setForeground(new java.awt.Color(255, 255, 255));
+        passTxt.setText("admin");
         passTxt.setBorder(null);
         body.add(passTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 220, 290, 40));
         body.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 170, 290, 10));
@@ -118,7 +119,13 @@ public class login extends javax.swing.JFrame {
         userTxt.setBackground(new java.awt.Color(52, 73, 94));
         userTxt.setFont(new java.awt.Font("Segoe UI Light", 0, 24)); // NOI18N
         userTxt.setForeground(new java.awt.Color(255, 255, 255));
+        userTxt.setText("admin");
         userTxt.setBorder(null);
+        userTxt.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                userTxtActionPerformed(evt);
+            }
+        });
         body.add(userTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 140, 290, 30));
         body.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 260, 290, 10));
 
@@ -178,6 +185,10 @@ public class login extends javax.swing.JFrame {
             }
         } 
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void userTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userTxtActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_userTxtActionPerformed
 
     /**
      * @param args the command line arguments

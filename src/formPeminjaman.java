@@ -27,7 +27,6 @@ public class formPeminjaman extends javax.swing.JPanel {
         orderLbl3 = new javax.swing.JLabel();
         pelangganLbl = new javax.swing.JLabel();
         payoutbtn = new javax.swing.JButton();
-        payoutbtn1 = new javax.swing.JButton();
         tglOrder = new com.toedter.calendar.JDateChooser();
         jSeparator1 = new javax.swing.JSeparator();
         orderLbl = new javax.swing.JLabel();
@@ -37,11 +36,8 @@ public class formPeminjaman extends javax.swing.JPanel {
         tglKembali = new com.toedter.calendar.JDateChooser();
         orderLbl1 = new javax.swing.JLabel();
         orderLbl4 = new javax.swing.JLabel();
-        jScrollPane2 = new javax.swing.JScrollPane();
-        tblPinjam = new javax.swing.JTable();
         pelangganLbl1 = new javax.swing.JLabel();
         resolusi = new javax.swing.JLabel();
-        pelangganLbl2 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(52, 73, 94));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -82,13 +78,6 @@ public class formPeminjaman extends javax.swing.JPanel {
         payoutbtn.setText("PAYOUT");
         payoutbtn.setBorder(null);
         add(payoutbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 420, 110, 40));
-
-        payoutbtn1.setBackground(new java.awt.Color(92, 151, 191));
-        payoutbtn1.setFont(new java.awt.Font("Segoe UI Semibold", 0, 18)); // NOI18N
-        payoutbtn1.setForeground(new java.awt.Color(255, 255, 255));
-        payoutbtn1.setText("CETAK STRUK");
-        payoutbtn1.setBorder(null);
-        add(payoutbtn1, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 230, 140, 40));
         add(tglOrder, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 120, 290, 40));
         add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 100, 290, 10));
 
@@ -119,36 +108,11 @@ public class formPeminjaman extends javax.swing.JPanel {
         orderLbl4.setText("JUMLAH MOBIL");
         add(orderLbl4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 250, 150, 30));
 
-        tblPinjam.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null}
-            },
-            new String [] {
-                "id_order", "Nama", "Merk Mobil", "Jumlah", "Harga", "tglPinjam", "tglKembali"
-            }
-        ));
-        tblPinjam.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                tblPinjamMouseClicked(evt);
-            }
-        });
-        jScrollPane2.setViewportView(tblPinjam);
-
-        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 70, 520, 150));
-
         pelangganLbl1.setFont(new java.awt.Font("Segoe UI Semibold", 0, 18)); // NOI18N
         pelangganLbl1.setForeground(new java.awt.Color(255, 255, 255));
         pelangganLbl1.setText("NAMA");
         add(pelangganLbl1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 80, 90, 30));
         add(resolusi, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1130, 680));
-
-        pelangganLbl2.setFont(new java.awt.Font("Segoe UI Semibold", 0, 18)); // NOI18N
-        pelangganLbl2.setForeground(new java.awt.Color(255, 255, 255));
-        pelangganLbl2.setText("LIST PEMINJAMAN");
-        add(pelangganLbl2, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 30, 160, 30));
     }// </editor-fold>//GEN-END:initComponents
         
     private void merkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_merkActionPerformed
@@ -167,16 +131,10 @@ public class formPeminjaman extends javax.swing.JPanel {
         }
     }//GEN-LAST:event_merkActionPerformed
 
-    private void tblPinjamMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tblPinjamMouseClicked
-        // TODO add your handling code here:
-     
-    }//GEN-LAST:event_tblPinjamMouseClicked
-
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel harga;
     private javax.swing.JTextField id_pelanggan2;
-    private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator3;
     private javax.swing.JTextField jml;
@@ -187,12 +145,9 @@ public class formPeminjaman extends javax.swing.JPanel {
     private javax.swing.JLabel orderLbl3;
     private javax.swing.JLabel orderLbl4;
     private javax.swing.JButton payoutbtn;
-    private javax.swing.JButton payoutbtn1;
     private javax.swing.JLabel pelangganLbl;
     private javax.swing.JLabel pelangganLbl1;
-    private javax.swing.JLabel pelangganLbl2;
     private javax.swing.JLabel resolusi;
-    private javax.swing.JTable tblPinjam;
     private com.toedter.calendar.JDateChooser tglKembali;
     private com.toedter.calendar.JDateChooser tglOrder;
     // End of variables declaration//GEN-END:variables
