@@ -30,34 +30,33 @@ public class data_peminjam extends javax.swing.JPanel {
         jScrollPane2 = new javax.swing.JScrollPane();
         tblPinjam = new javax.swing.JTable();
         pelangganLbl2 = new javax.swing.JLabel();
+        printBtn = new javax.swing.JButton();
         resolusi = new javax.swing.JLabel();
-        jPanel2 = new javax.swing.JPanel();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        backBtn = new javax.swing.JButton();
 
         setBackground(new java.awt.Color(52, 73, 94));
+        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         tblPinjam.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null}
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null}
             },
             new String [] {
-                "id_order", "Nama", "Merk Mobil", "Jumlah", "Harga", "tglPinjam", "tglKembali"
+                "id", "Nama", "Alamat", "Jenis Kelamin", "No Hp"
             }
         ));
         tblPinjam.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -67,168 +66,39 @@ public class data_peminjam extends javax.swing.JPanel {
         });
         jScrollPane2.setViewportView(tblPinjam);
 
+        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 60, 860, 290));
+
         pelangganLbl2.setFont(new java.awt.Font("Segoe UI Semibold", 0, 18)); // NOI18N
         pelangganLbl2.setForeground(new java.awt.Color(255, 255, 255));
-        pelangganLbl2.setText("LIST PEMINJAMAN");
+        pelangganLbl2.setText("DATA PEMINJAM");
+        add(pelangganLbl2, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 10, 160, 30));
 
-        jButton3.setText("CANCEL");
+        printBtn.setBackground(new java.awt.Color(92, 151, 191));
+        printBtn.setFont(new java.awt.Font("Segoe UI Semibold", 0, 18)); // NOI18N
+        printBtn.setForeground(new java.awt.Color(255, 255, 255));
+        printBtn.setText("CETAK");
+        printBtn.setBorder(null);
+        add(printBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 360, 140, 40));
+        add(resolusi, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1130, 680));
 
-        jButton4.setText("DELETE");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
-            }
-        });
-
-        jButton2.setText("UPDATE");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jButton2)
-                .addGap(18, 18, 18)
-                .addComponent(jButton4)
-                .addGap(18, 18, 18)
-                .addComponent(jButton3)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton2)))
-                .addContainerGap())
-        );
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1130, Short.MAX_VALUE)
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(460, 460, 460)
-                            .addComponent(pelangganLbl2, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(30, 30, 30)
-                            .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 860, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(30, 30, 30)
-                            .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 290, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addComponent(resolusi, javax.swing.GroupLayout.PREFERRED_SIZE, 1130, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGap(0, 0, Short.MAX_VALUE)))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 680, Short.MAX_VALUE)
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(10, 10, 10)
-                            .addComponent(pelangganLbl2, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(20, 20, 20)
-                            .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 290, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(370, 370, 370)
-                            .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addComponent(resolusi, javax.swing.GroupLayout.PREFERRED_SIZE, 680, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGap(0, 0, Short.MAX_VALUE)))
-        );
+        backBtn.setBackground(new java.awt.Color(92, 151, 191));
+        backBtn.setFont(new java.awt.Font("Segoe UI Semibold", 0, 18)); // NOI18N
+        backBtn.setForeground(new java.awt.Color(255, 255, 255));
+        backBtn.setText("KEMBALI");
+        backBtn.setBorder(null);
+        add(backBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 360, 140, 40));
     }// </editor-fold>//GEN-END:initComponents
 
     private void tblPinjamMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tblPinjamMouseClicked
         // TODO add your handling code here:
     }//GEN-LAST:event_tblPinjamMouseClicked
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        // TODO add your handling code here:
-        //        String kd=this.TxtIDPeminjam.getText();
-        //        String np=this.TxtNamaPeminjam.getText();
-        //        String jk=(String) this.TxtJenisKelamin.getSelectedItem();
-        //        String al=this.TxtAlamat.getText();
-        //        String tlp=this.TxtNoHP.getText();
-        //        if("".equals(kd) || ("".equals(np)) || ("".equals(jk)) || ("".equals(al)) || ("".equals(tlp)))
-        //        {
-            //            JOptionPane.showMessageDialog(this, "Lengkapi data");
-            //        }else{
-            //            try {
-                //
-                //                Connection c=ClassDB.getkoneksi();
-                //                Statement s= c.createStatement();
-                //                String sql="Delete from tblpeminjam Where id_peminjam=?";
-                //
-                //                PreparedStatement p=(PreparedStatement) c.prepareStatement(sql);
-                //                p.setString(1, kd);
-                //
-                //                p.executeUpdate();
-                //                p.close();
-                //                JOptionPane.showMessageDialog(this, "Sukses Hapus data");
-                //            }catch(SQLException e) {
-                //                System.out.println("Terjadi kesalahan " + e);
-                //            }finally{
-                //                HapusTeks();
-                //            }
-            //        }
-    }//GEN-LAST:event_jButton4ActionPerformed
-
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
-        //        String kd=this.TxtIDPeminjam.getText();
-        //        String np=this.TxtNamaPeminjam.getText();
-        //        String jk=(String) this.TxtJenisKelamin.getSelectedItem();
-        //        String al=this.TxtAlamat.getText();
-        //        String tlp=this.TxtNoHP.getText();
-        //        if("".equals(kd) || ("".equals(np)) || ("".equals(jk)) || ("".equals(al)) || ("".equals(tlp)))
-        //        {
-            //            JOptionPane.showMessageDialog(this, "Lengkapi data");
-            //        }else{
-            //            try {
-                //
-                //                Connection c=ClassDB.getkoneksi();
-                //                Statement s= c.createStatement();
-                //                String sql="Update tblpeminjam Set nama=?,jekel=?,alamat=?,no_hp=? Where id_peminjam=?)";
-                //
-                //                PreparedStatement p=(PreparedStatement) c.prepareStatement(sql);
-                //                p.setString(5, kd);
-                //                p.setString(1, np);
-                //                p.setString(2, jk);
-                //                p.setString(3, al);
-                //                p.setString(4, tlp);
-                //
-                //                p.executeUpdate();
-                //                p.close();
-                //                JOptionPane.showMessageDialog(this, "Sukses Update data");
-                //            }catch(SQLException e) {
-                //                System.out.println("Terjadi kesalahan " + e);
-                //            }finally{
-                //                HapusTeks();
-    }//GEN-LAST:event_jButton2ActionPerformed
-
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JPanel jPanel2;
+    private javax.swing.JButton backBtn;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JLabel pelangganLbl2;
+    private javax.swing.JButton printBtn;
     private javax.swing.JLabel resolusi;
     private javax.swing.JTable tblPinjam;
     // End of variables declaration//GEN-END:variables

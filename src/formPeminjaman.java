@@ -22,18 +22,18 @@ public class formPeminjaman extends javax.swing.JPanel {
     private void initComponents() {
 
         merk = new javax.swing.JComboBox<>();
+        tglKembali = new com.toedter.calendar.JDateChooser();
+        tglOrder = new com.toedter.calendar.JDateChooser();
         orderLbl2 = new javax.swing.JLabel();
         id_pelanggan2 = new javax.swing.JTextField();
         orderLbl3 = new javax.swing.JLabel();
         pelangganLbl = new javax.swing.JLabel();
         payoutbtn = new javax.swing.JButton();
-        tglOrder = new com.toedter.calendar.JDateChooser();
         jSeparator1 = new javax.swing.JSeparator();
         orderLbl = new javax.swing.JLabel();
         jSeparator3 = new javax.swing.JSeparator();
         harga = new javax.swing.JLabel();
         jml = new javax.swing.JTextField();
-        tglKembali = new com.toedter.calendar.JDateChooser();
         orderLbl1 = new javax.swing.JLabel();
         orderLbl4 = new javax.swing.JLabel();
         pelangganLbl1 = new javax.swing.JLabel();
@@ -50,6 +50,8 @@ public class formPeminjaman extends javax.swing.JPanel {
             }
         });
         add(merk, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 300, 290, 40));
+        add(tglKembali, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 190, 280, 40));
+        add(tglOrder, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 130, 280, 40));
 
         orderLbl2.setFont(new java.awt.Font("Segoe UI Semibold", 0, 20)); // NOI18N
         orderLbl2.setForeground(new java.awt.Color(255, 255, 255));
@@ -75,10 +77,9 @@ public class formPeminjaman extends javax.swing.JPanel {
         payoutbtn.setBackground(new java.awt.Color(92, 151, 191));
         payoutbtn.setFont(new java.awt.Font("Segoe UI Semibold", 0, 18)); // NOI18N
         payoutbtn.setForeground(new java.awt.Color(255, 255, 255));
-        payoutbtn.setText("PAYOUT");
+        payoutbtn.setText("TAMBAH");
         payoutbtn.setBorder(null);
         add(payoutbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 420, 110, 40));
-        add(tglOrder, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 120, 290, 40));
         add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 100, 290, 10));
 
         orderLbl.setFont(new java.awt.Font("Segoe UI Semibold", 0, 20)); // NOI18N
@@ -96,7 +97,6 @@ public class formPeminjaman extends javax.swing.JPanel {
         jml.setForeground(new java.awt.Color(255, 255, 255));
         jml.setBorder(null);
         add(jml, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 250, 290, 30));
-        add(tglKembali, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 190, 290, 40));
 
         orderLbl1.setFont(new java.awt.Font("Segoe UI Semibold", 0, 18)); // NOI18N
         orderLbl1.setForeground(new java.awt.Color(255, 255, 255));
@@ -110,7 +110,7 @@ public class formPeminjaman extends javax.swing.JPanel {
 
         pelangganLbl1.setFont(new java.awt.Font("Segoe UI Semibold", 0, 18)); // NOI18N
         pelangganLbl1.setForeground(new java.awt.Color(255, 255, 255));
-        pelangganLbl1.setText("NAMA");
+        pelangganLbl1.setText("ID");
         add(pelangganLbl1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 80, 90, 30));
         add(resolusi, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1130, 680));
     }// </editor-fold>//GEN-END:initComponents

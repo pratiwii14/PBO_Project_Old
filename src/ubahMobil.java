@@ -12,13 +12,13 @@ import java.awt.event.ActionListener;
  *
  * @author Wahib
  */
-public class addMobil extends javax.swing.JPanel {
+public class ubahMobil extends javax.swing.JPanel {
 
     /**
      * Creates new form addMobil
      */
     listMobil car;
-    public addMobil() {
+    public ubahMobil() {
         initComponents();
         car = new listMobil();
         
@@ -65,7 +65,7 @@ public class addMobil extends javax.swing.JPanel {
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("TAMBAH DATA MOBIL");
+        jLabel1.setText("UBAH DATA MOBIL");
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 0, 280, 40));
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -118,28 +118,23 @@ public class addMobil extends javax.swing.JPanel {
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel4.setText("Merk Mobil");
+        jLabel4.setText("Type Mobil");
         add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 120, 120, 30));
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Milik Sendiri", "Sewaan" }));
-        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox1ActionPerformed(evt);
-            }
-        });
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Baru", "Standard", "Jadul" }));
         add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 410, 150, 40));
 
         jPanel1.setBackground(new java.awt.Color(204, 204, 204));
         jPanel1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        jButton2.setText("Simpan");
+        jButton2.setText("SAVE");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
             }
         });
 
-        jButton4.setText("Batal");
+        jButton4.setText("CANCEL");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);
@@ -153,9 +148,9 @@ public class addMobil extends javax.swing.JPanel {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(21, 21, 21)
                 .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(37, 37, 37)
+                .addGap(36, 36, 36)
                 .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(20, Short.MAX_VALUE))
+                .addContainerGap(21, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -240,10 +235,6 @@ public class addMobil extends javax.swing.JPanel {
         // TODO add your handling code here:
 //        HapusTeks();
     }//GEN-LAST:event_jButton4ActionPerformed
-
-    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jComboBox1ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

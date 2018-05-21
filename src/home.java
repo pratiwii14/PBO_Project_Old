@@ -1,7 +1,10 @@
 
+import data.listMobil;
 import data.pendapatan;
 import data.listPeminjaman;
 import java.awt.GridBagLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 
@@ -10,7 +13,6 @@ import java.text.SimpleDateFormat;
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 /**
  *
  * @author Wahib
@@ -22,10 +24,12 @@ public class home extends javax.swing.JFrame {
     addMobil addCar;
     addPeminjam addCustomer;
     dashboard dash;
-    formPeminjaman pesan; 
+    formPeminjaman pesan;
     formPengembalian kembali;
     listPeminjaman pinjam;
     pendapatan pendapatan;
+    listMobil car;
+
     public home() {
         initComponents();
         addCar = new addMobil();
@@ -34,7 +38,10 @@ public class home extends javax.swing.JFrame {
         pesan = new formPeminjaman();
         kembali = new formPengembalian();
         pinjam = new listPeminjaman();
-        pendapatan = new pendapatan ();
+        pendapatan = new pendapatan();
+        car = new listMobil();
+        addCar.addSavelistener(new saveListener());
+        
         body.setLayout(layout);
         body.add(addCar);
         body.add(addCustomer);
@@ -42,7 +49,9 @@ public class home extends javax.swing.JFrame {
         body.add(pesan);
         body.add(kembali);
         body.add(pinjam);
-        body.add (pendapatan);
+        body.add(pendapatan);
+        body.add(car);
+        
         dash.setVisible(true);
         addCar.setVisible(false);
         addCustomer.setVisible(false);
@@ -50,8 +59,18 @@ public class home extends javax.swing.JFrame {
         kembali.setVisible(false);
         pinjam.setVisible(false);
         pendapatan.setVisible(false);
+        car.setVisible(false);
     }
 
+    private class saveListener implements ActionListener {
+
+        @Override
+        public void actionPerformed(ActionEvent ae) {
+            car.setVisible(true);
+            addCar.setVisible(false);
+        }
+        
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -100,6 +119,11 @@ public class home extends javax.swing.JFrame {
         sidebar.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         cart.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8_Plus_Math_40px.png"))); // NOI18N
+        cart.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                cartMouseClicked(evt);
+            }
+        });
         sidebar.add(cart, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, 50, 50));
 
         home.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8_Home_40px.png"))); // NOI18N
@@ -109,12 +133,22 @@ public class home extends javax.swing.JFrame {
         sidebar.add(menu, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 60, 50));
 
         checkout.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8_Money_40px.png"))); // NOI18N
+        checkout.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                checkoutMouseClicked(evt);
+            }
+        });
         sidebar.add(checkout, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 250, 60, 50));
 
         setting.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8_Settings_40px.png"))); // NOI18N
         sidebar.add(setting, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 410, 60, 50));
 
         setting1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8_Car_40px.png"))); // NOI18N
+        setting1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                setting1MouseClicked(evt);
+            }
+        });
         sidebar.add(setting1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 330, 60, 50));
 
         getContentPane().add(sidebar, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 80, 650));
@@ -274,6 +308,7 @@ public class home extends javax.swing.JFrame {
         kembali.setVisible(false);
         pinjam.setVisible(false);
         pendapatan.setVisible(false);
+        car.setVisible(false);
     }//GEN-LAST:event_itemMobilActionPerformed
 
     private void itemPeminjamActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itemPeminjamActionPerformed
@@ -285,6 +320,7 @@ public class home extends javax.swing.JFrame {
         kembali.setVisible(false);
         pinjam.setVisible(false);
         pendapatan.setVisible(false);
+        car.setVisible(false);
     }//GEN-LAST:event_itemPeminjamActionPerformed
 
     private void itemPeminjamanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itemPeminjamanActionPerformed
@@ -296,6 +332,7 @@ public class home extends javax.swing.JFrame {
         kembali.setVisible(false);
         pinjam.setVisible(false);
         pendapatan.setVisible(false);
+        car.setVisible(false);
     }//GEN-LAST:event_itemPeminjamanActionPerformed
 
     private void itemPengembalianActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itemPengembalianActionPerformed
@@ -307,6 +344,7 @@ public class home extends javax.swing.JFrame {
         kembali.setVisible(true);
         pinjam.setVisible(false);
         pendapatan.setVisible(false);
+        car.setVisible(false);
     }//GEN-LAST:event_itemPengembalianActionPerformed
 
     private void lapPeminjamanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lapPeminjamanActionPerformed
@@ -317,6 +355,7 @@ public class home extends javax.swing.JFrame {
         kembali.setVisible(false);
         pinjam.setVisible(true);
         pendapatan.setVisible(false);
+        car.setVisible(false);
     }//GEN-LAST:event_lapPeminjamanActionPerformed
 
     private void lapPendapatanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lapPendapatanActionPerformed
@@ -327,7 +366,34 @@ public class home extends javax.swing.JFrame {
         kembali.setVisible(false);
         pinjam.setVisible(false);
         pendapatan.setVisible(true);
+        car.setVisible(false);
     }//GEN-LAST:event_lapPendapatanActionPerformed
+
+    private void checkoutMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_checkoutMouseClicked
+
+    }//GEN-LAST:event_checkoutMouseClicked
+
+    private void setting1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_setting1MouseClicked
+        addCar.setVisible(false);
+        addCustomer.setVisible(false);
+        dash.setVisible(false);
+        pesan.setVisible(false);
+        kembali.setVisible(false);
+        pinjam.setVisible(false);
+        pendapatan.setVisible(false);
+        car.setVisible(true);
+    }//GEN-LAST:event_setting1MouseClicked
+
+    private void cartMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cartMouseClicked
+        addCar.setVisible(false);
+        addCustomer.setVisible(false);
+        dash.setVisible(false);
+        pesan.setVisible(false);
+        kembali.setVisible(false);
+        pinjam.setVisible(true);
+        pendapatan.setVisible(false);
+        car.setVisible(false);
+    }//GEN-LAST:event_cartMouseClicked
 
     /**
      * @param args the command line arguments
